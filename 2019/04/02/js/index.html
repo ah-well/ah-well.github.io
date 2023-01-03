@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?true"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>js basic | Well&#39;s Blog | Everything from Everywhere</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    
+    <meta name="keywords" content="js">
+    <meta name="description" content="js 变量（大小写敏感）分类 Number（数字） String（字符串） Boolean（布尔） Symbol（符号）    （第六版新增） Object（对象）     - 由键-值组成的无序集合 Function（函数） (严格意义上也算Object) Array（数组）    - 有序集合 Date（日期） RegExp（正则表达式）   Null（空） Undefined（未定义）  J">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js basic">
+<meta property="og:url" content="http://ah-well.github.io/2019/04/02/js/index.html">
+<meta property="og:site_name" content="Well&#39;s Blog">
+<meta property="og:description" content="js 变量（大小写敏感）分类 Number（数字） String（字符串） Boolean（布尔） Symbol（符号）    （第六版新增） Object（对象）     - 由键-值组成的无序集合 Function（函数） (严格意义上也算Object) Array（数组）    - 有序集合 Date（日期） RegExp（正则表达式）   Null（空） Undefined（未定义）  J">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-04-02T06:30:43.000Z">
+<meta property="article:modified_time" content="2022-06-20T23:49:07.739Z">
+<meta property="article:author" content="Well Lee">
+<meta property="article:tag" content="js">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="Well&#39;s Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon-1.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+    
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8c6347bc89bd9fd0ede8e42e16976296";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-7187691905717332",
+        enable_page_level_ads: true
+    });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140788799-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-140788799-1');
+    </script>
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu"  >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand-1.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avator.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Well Lee</h5>
+          <a href="mailto:990269246@qq.com" title="990269246@qq.com" class="mail">990269246@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                首页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                档案
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                目录
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/ah-well" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/99026well," target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about"  >
+                <i class="icon icon-lg icon-fire"></i>
+                关于
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">js basic</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">js basic</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-04-02T06:30:43.000Z" itemprop="datePublished" class="page-time">
+  2019-04-02
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#js-变量（大小写敏感）"><span class="post-toc-number">1.</span> <span class="post-toc-text">js 变量（大小写敏感）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#分类"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">分类</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数字"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">数字</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#字符串"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">字符串</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#布尔值"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">布尔值</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#undefined-null"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">undefined null</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#strict模式"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">strict模式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#对象"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">对象</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#声明变量关键字-let-const-var"><span class="post-toc-number">1.8.</span> <span class="post-toc-text">声明变量关键字 let const var</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#声明变量类型"><span class="post-toc-number">1.9.</span> <span class="post-toc-text">声明变量类型</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数组"><span class="post-toc-number">1.10.</span> <span class="post-toc-text">数组</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#控制结构"><span class="post-toc-number">2.</span> <span class="post-toc-text">控制结构</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#循环"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">循环</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#执行环境和作用域"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">执行环境和作用域</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-js"
+  class="post-article article-type-post fade" itemprop="blogPost">
+    <div class="post-card">
+        <h1 class="post-card-title">js basic</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-04-02 14:30:43" datetime="2019-04-02T06:30:43.000Z"  itemprop="datePublished">2019-04-02</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            <!-- 开始添加字数统计-->
+        </div>
+        
+            <div style="margin-top:10px;font-size: 12px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <i class="icon icon-keyboard-o"></i>
+      <span class="post-meta-item-text">  字数统计: </span>
+      <span class="post-count">2k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon icon-hourglass-half"></i>
+      <span class="post-meta-item-text">  阅读时长: </span>
+      <span class="post-count">7分</span>
+    </span>
+  </span>
+</div>
+        
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="js-变量（大小写敏感）"><a href="#js-变量（大小写敏感）" class="headerlink" title="js 变量（大小写敏感）"></a>js 变量（大小写敏感）</h2><h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><ul>
+<li>Number（数字）</li>
+<li>String（字符串）</li>
+<li>Boolean（布尔）</li>
+<li>Symbol（符号）    （第六版新增）</li>
+<li>Object（对象）     - 由键-值组成的无序集合<ul>
+<li>Function（函数） (严格意义上也算Object)</li>
+<li>Array（数组）    - 有序集合</li>
+<li>Date（日期）</li>
+<li>RegExp（正则表达式）</li>
+</ul>
+</li>
+<li>Null（空）</li>
+<li>Undefined（未定义）</li>
+</ul>
+<p>JavaScript 还有一种内置Error（错误）类型</p>
+<h3 id="数字"><a href="#数字" class="headerlink" title="数字"></a>数字</h3><ul>
+<li>JavaScript不区分整数和浮点数，统一用Number表示，以下都是合法的Number类型：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">123</span>;      <span class="comment">// 整数123</span></span><br><span class="line"><span class="number">0.456</span>;    <span class="comment">// 浮点数0.456</span></span><br><span class="line"><span class="number">1.2345e3</span>; <span class="comment">// 科学计数法表示1.2345x1000，等同于1234.5</span></span><br><span class="line"><span class="number">-99</span>;      <span class="comment">// 负数</span></span><br><span class="line"><span class="literal">NaN</span>;      <span class="comment">// NaN表示Not a Number，当无法计算结果时用NaN表示</span></span><br><span class="line"><span class="literal">Infinity</span>; <span class="comment">// 表示无限大，当数值超过了JavaScript的Number所能表示的最大值时，就表示为Infinity</span></span><br></pre></td></tr></table></figure></li>
+<li>0.1 + 0.2 = 0.30000000000000004</li>
+</ul>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><ul>
+<li>JavaScript 中的字符串是一串Unicode 字符序列</li>
+</ul>
+<h3 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h3><ul>
+<li><p>通过布尔运算计算出来的结果</p>
+</li>
+<li><h3 id="undefined-null"><a href="#undefined-null" class="headerlink" title="undefined null"></a>undefined null</h3></li>
+<li><p>JavaScript 允许声明变量但不对其赋值，一个未被赋值的变量就是 undefined 类型。还有一点需要说明的是，undefined 实际上是一个不允许修改的常量。</p>
+</li>
+<li><p>null表示一个空值（non-value），必须使用null关键字才能访问</p>
+<h3 id="strict模式"><a href="#strict模式" class="headerlink" title="strict模式"></a>strict模式</h3><p>JavaScript在设计之初，为了方便初学者学习，并不强制要求用var申明变量。这个设计错误带来了严重的后果：如果一个变量没有通过var申明就被使用，那么该变量就自动被申明为全局变量：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">i = <span class="number">10</span>; <span class="comment">// i现在是全局变量</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><ul>
+<li><p>JavaScript用一个{…}表示一个对象，键值对以xxx: xxx形式申明，用,隔开。注意，最后一个键值对不需要在末尾加,，如果加了，有的浏览器（如低版本的IE）将报错。</p>
+</li>
+<li><p>访问属性是通过.操作符完成的，但这要求属性名必须是一个有效的变量名。如果属性名包含特殊字符，就必须用’’括起来：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xiaohong = &#123;</span><br><span class="line">  name: <span class="string">'小红'</span>,</span><br><span class="line">  <span class="string">'middle-school'</span>: <span class="string">'No.1 Middle School'</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>xiaohong的属性名middle-school不是一个有效的变量，就需要用’’括起来。访问这个属性也无法使用.操作符，必须用[‘xxx’]来访问：</li>
+</ul>
+</li>
+<li><p>如果访问一个不存在的属性会返回什么呢？JavaScript规定，访问不存在的属性不报错，而是返回undefined：</p>
+</li>
+<li><p>由于JavaScript的对象是动态类型(这意味着相同的变量可用作不同的类型)，你可以自由地给一个对象添加或删除属性：</p>
+</li>
+<li><p>如果我们要检测xiaoming是否拥有某一属性，可以用in操作符, 不过要小心，如果in判断一个属性存在，这个属性不一定是xiaoming的，它可能是xiaoming继承得到的：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xiaoming = &#123;</span><br><span class="line">  name: <span class="string">'小明'</span>,</span><br><span class="line">  birth: <span class="number">1990</span>,</span><br><span class="line">  school: <span class="string">'No.1 Middle School'</span>,</span><br><span class="line">  height: <span class="number">1.70</span>,</span><br><span class="line">  weight: <span class="number">65</span>,</span><br><span class="line">  score: <span class="literal">null</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="string">'name'</span> <span class="keyword">in</span> xiaoming; <span class="comment">// true</span></span><br><span class="line"><span class="string">'grade'</span> <span class="keyword">in</span> xiaoming; <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="string">'toString'</span> <span class="keyword">in</span> xiaoming; <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> xiaoming = &#123;</span><br><span class="line">  name: <span class="string">'小明'</span></span><br><span class="line">&#125;;</span><br><span class="line">xiaoming.hasOwnProperty(<span class="string">'name'</span>); <span class="comment">// true</span></span><br><span class="line">xiaoming.hasOwnProperty(<span class="string">'toString'</span>); <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明空对象的两种方法</span></span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line"><span class="keyword">var</span> obj = &#123;&#125;;</span><br></pre></td></tr></table></figure></li>
+<li><p>因为toString定义在object对象中，而所有对象最终都会在原型链上指向object，所以xiaoming也拥有toString属性。要判断一个属性是否是xiaoming自身拥有的，而不是继承得到的，可以用hasOwnProperty()方法</p>
+</li>
+<li><h3 id="声明变量关键字-let-const-var"><a href="#声明变量关键字-let-const-var" class="headerlink" title="声明变量关键字 let const var"></a>声明变量关键字 let const var</h3></li>
+<li><p>let 语句声明一个块级作用域的本地变量，并且可选的将其初始化为一个值。</p>
+</li>
+<li><p>const 允许声明一个不可变的常量。这个常量在定义域内总是可见的。</p>
+</li>
+<li><p>var 是最常见的声明变量的关键字。它没有其他两个关键字的种种限制。这是因为它是传统上在 JavaScript 声明变量的唯一方法。使用 var 声明的变量在它所声明的整个函数都是可见的。</p>
+</li>
+</ul>
+<blockquote>
+<p>JavaScript 与其他语言的（如 Java）的重要区别是在 JavaScript 中语句块（blocks）是没有作用域的，只有函数有作用域。因此如果在一个复合语句中（如 if 控制结构中）使用 var 声明一个变量，那么它的作用域是整个函数（复合语句在函数中）。 但是从 ECMAScript Edition 6 开始将有所不同的， let 和 const 关键字允许你创建块作用域的变量。</p>
+</blockquote>
+<h3 id="声明变量类型"><a href="#声明变量类型" class="headerlink" title="声明变量类型"></a>声明变量类型</h3><ul>
+<li>用new来声明。JavaScript 变量均为对象。当您声明一个变量时，就创建了一个新的对象。</li>
+</ul>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><ul>
+<li>Array.length 并不总是等于数组中元素的个数<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="string">"dog"</span>, <span class="string">"cat"</span>, <span class="string">"hen"</span>];</span><br><span class="line">a[<span class="number">100</span>] = <span class="string">"fox"</span>;</span><br><span class="line">a.length; <span class="comment">// 101</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="控制结构"><a href="#控制结构" class="headerlink" title="控制结构"></a>控制结构</h2><h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><ul>
+<li><p>for</p>
+</li>
+<li><p>for…of循环，ES2015 引入了更加简洁的，可以用它来遍历可迭代对象，例如数组：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> currentValue <span class="keyword">of</span> a) &#123;</span><br><span class="line">  <span class="comment">// Do something with currentValue</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>for…in  注意，如果有人向 Array.prototype 添加了新的属性，使用这样的循环这些属性也同样会被遍历。所以并不推荐使用这种方法遍历数组：</p>
+</li>
+<li><p>forEach()</p>
+</li>
+<li><p>while</p>
+</li>
+<li><p>do…while</p>
+<blockquote>
+<p>do…while循环体会至少执行1次，而for和while循环则可能一次都不执行。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="执行环境和作用域"><a href="#执行环境和作用域" class="headerlink" title="执行环境和作用域"></a>执行环境和作用域</h3><ul>
+<li><p>执行环境（execution context，为简单起见，有时也称为“环境”）是 JavaScript 中最为重要的一个概念。执行环境定义了变量或函数有权访问的其他数据，决定了它们各自的行为。每个执行环境都有一个与之关联的变量对象（variable object），环境中定义的所有变量和函数都保存在这个对象中。虽然我们编写的代码无法访问这个对象，但解析器在处理数据时会在后台使用它。</p>
+</li>
+<li><p>全局执行环境是最外围的一个执行环境。根据 ECMAScript 实现所在的宿主环境不同，表示执行环境的对象也不一样。在 Web 浏览器中，全局执行环境被认为是 window 对象（第 7 章将详细讨论），因此所有全局变量和函数都是作为 window 对象的属性和方法创建的。某个执行环境中的所有代码执行完毕后，该环境被销毁，保存在其中的所有变量和函数定义也随之销毁（全局执行环境直到应用程序退出——例如关闭网页或浏览器——时才会被销毁）。</p>
+</li>
+<li><p>每个函数都有自己的执行环境。当执行流进入一个函数时，函数的环境就会被推入一个环境栈中。而在函数执行之后，栈将其环境弹出，把控制权返回给之前的执行环境。ECMAScript 程序中的执行流正是由这个方便的机制控制着。</p>
+</li>
+<li><p>当代码在一个环境中执行时，会创建变量对象的一个作用域链（scope chain）。作用域链的用途，是保证对执行环境有权访问的所有变量和函数的有序访问。作用域链的前端，始终都是当前执行的代码所在环境的变量对象。如果这个环境是函数，则将其活动对象（activation object）作为变量对象。活动对象在最开始时只包含一个变量，即 arguments 对象（这个对象在全局环境中是不存在的）。作用域链中的下一个变量对象来自包含（外部）环境，而再下一个变量对象则来自下一个包含环境。这样，一直延续到全局执行环境；全局执行环境的变量对象始终都是作用域链中的最后一个对象。</p>
+</li>
+<li><p>标识符解析是沿着作用域链一级一级地搜索标识符的过程。搜索过程始终从作用域链的前端开始，然后逐级地向后回溯，直至找到标识符为止（如果找不到标识符，通常会导致错误发生）。</p>
+</li>
+<li><p>函数参数也被当作变量来对待，因此其访问规则与执行环境中的其他变量相同。</p>
+</li>
+</ul>
+<hr>
+<p>P.S.本文部分内容参考了 <a href="https://www.liaoxuefeng.com/" target="_blank" rel="noopener">廖雪峰博客</a> 、 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target="_blank" rel="noopener">MDN Web docs</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2022-06-20T23:49:07.739Z" itemprop="dateUpdated">2022-06-21 07:49:07</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2019/04/02/js/" target="_blank" rel="external">http://ah-well.github.io/2019/04/02/js/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://ah-well.github.io">
+            <img src="/img/avator.jpg" alt="Well Lee">
+            Well Lee
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/" rel="tag">js</a></li></ul>
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://ah-well.github.io/2019/04/02/js/&title=《js basic》 — Well's Blog&pic=http://ah-well.github.io/img/avator.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ah-well.github.io/2019/04/02/js/&title=《js basic》 — Well's Blog&source=to be continue" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://ah-well.github.io/2019/04/02/js/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《js basic》 — Well's Blog&url=http://ah-well.github.io/2019/04/02/js/&via=http://ah-well.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://ah-well.github.io/2019/04/02/js/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+        </div>
+    </div>
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2019/04/02/computer/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">computer</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/03/22/language/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">language leraning</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'true' == 'true',
+            verify: 'false' == 'true',
+            appId: "odp8YPdBtrqVC03PX8xILHel-gzGzoHsz",
+            appKey: "vVzHsa1M6zIYgPHPXCsaWYl3",
+            avatar: "mm",
+            placeholder: "留下你的精彩评论吧",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        觉得可以请打赏点什么吧~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        <p>
+            <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank">
+                 本网站由
+                <img src="img/又拍云_logo6.png" alt="" srcset="" width="64">
+                提供CDN加速/云存储服务
+            </a>
+        </p>
+        
+<p>
+    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        UV：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        PV：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+<script>
+    var now = new Date();
+
+    function createtime() {
+        var grt = new Date("07/10/2018 17:38:00"); //在此处修改你的建站时间
+        now.setTime(now.getTime() + 250);
+        days = (now - grt) / 1000 / 60 / 60 / 24;
+        dnum = Math.floor(days);
+        hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+        hnum = Math.floor(hours);
+        if (String(hnum).length == 1) {
+            hnum = "0" + hnum;
+        }
+        minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes);
+        if (String(mnum).length == 1) {
+            mnum = "0" + mnum;
+        }
+        seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds);
+        if (String(snum).length == 1) {
+            snum = "0" + snum;
+        }
+        document.getElementById("timeDate").innerHTML = "已存活 " + dnum + " 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval("createtime()", 250);
+
+</script>
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>
+                Well Lee &copy; 2018 - 2023</span>
+            <span>.
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://ah-well.github.io/2019/04/02/js/&title=《js basic》 — Well's Blog&pic=http://ah-well.github.io/img/avator.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ah-well.github.io/2019/04/02/js/&title=《js basic》 — Well's Blog&source=to be continue" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://ah-well.github.io/2019/04/02/js/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《js basic》 — Well's Blog&url=http://ah-well.github.io/2019/04/02/js/&via=http://ah-well.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://ah-well.github.io/2019/04/02/js/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABy0lEQVR42u3aQW6DQAwF0Nz/0qnUVaUW+LaZCZXerBCE8GBheWy/XvF6f6/z459nfp8//8+bFy4u7pj7Pl3nrOTq0Wv8Pj434OLi7ucmwevoLxJENSAensfFxX0YN09l8rCFi4v737kJbh7+cHFxn8NNNj+9q3mYu3mvhouLO+DeVTCdHH+gvouLi9vqSlSLp/mWpvl0XFzcLdy8EVItlPTKItGr4uLiLubmW5p8hGK+dbkIYbi4uIu51cJoXgatfoK8tIqLi7uHWy2eVgez8jZJ9cPh4uKu4E4QvbSm2oD5o4qDi4u7mFuND9WmSHVsK3ptXFzcxdxeyaOXoNzQasXFxf0QtzeklQSpvGVy+BtcXNwt3GpoS4Ytei92W38YFxd3zO2FoV4e0hvCwMXF3c+t3jZJhnrDGRczI7i4uAu4vebHurGMi2CHi4u7kTtpqFS3Rq/iwsXF/RQ3X/MeR29oI8qqcHFxb+JWA8q9gWxyFRcXdzU3L3Akwxa9jU2h84OLi7uRmwSv/AG9UbCk3YKLi/s07iTdmTdlcXFxn8zN7+01Vy7KJbi4uBu580GKySZnSVkEFxd3wK0WTM/Tl8kYVlQWwcXFXcv9AkOjdp3PjasEAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '快点肥来呀(*^▽^*)';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '梦幻境';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"center","width":60,"height":120},"mobile":{"show":true},"log":false});</script></body>
+</html>
