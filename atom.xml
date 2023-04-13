@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Well&#39;s Blog</title>
+  
+  <subtitle>Everything from Everywhere</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://ah-well.github.io/"/>
+  <updated>2021-07-05T03:14:59.278Z</updated>
+  <id>http://ah-well.github.io/</id>
+  
+  <author>
+    <name>Well Lee</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>inter-css</title>
+    <link href="http://ah-well.github.io/2019/05/24/inter-css/"/>
+    <id>http://ah-well.github.io/2019/05/24/inter-css/</id>
+    <published>2019-05-24T11:41:09.000Z</published>
+    <updated>2021-07-05T03:14:59.278Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>空元素、行内元素、块级元素<ul><li>span</li></ul></li><li>BFC (Block formatting contexts)<ul><li>浮动和绝对定位元素，非块盒的块容器（诸如：inline-blocks, table-cells 和 table-captions），以及 overflow 值不为 visiable（除非该值已经延伸到视口上） 的块盒，都会为他们的内容创建新的块格式化上下文。</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;空元素、行内元素、块级元素&lt;ul&gt;
+&lt;li&gt;span&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;BFC (Block formatting contexts)&lt;ul&gt;
+&lt;li&gt;浮动和绝对定位元素，非块盒的块容器（诸如：inline-blocks, table-c
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>inter-js</title>
+    <link href="http://ah-well.github.io/2019/05/16/inter-js/"/>
+    <id>http://ah-well.github.io/2019/05/16/inter-js/</id>
+    <published>2019-05-16T12:20:45.000Z</published>
+    <updated>2021-07-05T03:14:59.279Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><p>call(), apply(), bind()</p><ul><li>这三个函数都是用来完成函数调用，并且设置this指向。 call()和apply()是 ECMAScript3 标准引入，而bind()函数则是在 ECMAScript 5 引入。</li></ul></li><li><p>面向对象 封装、继承、多态</p><ul><li>理解</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;call(), apply(), bind()&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;这三个函数都是用来完成函数调用，并且设置this指向。 call()和apply()是 ECMAScript3 标准引入，而bind()函数则是在 ECMAScript 5 引入。&lt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>inter-frontend</title>
+    <link href="http://ah-well.github.io/2019/05/16/inter-frontend/"/>
+    <id>http://ah-well.github.io/2019/05/16/inter-frontend/</id>
+    <published>2019-05-16T05:00:04.000Z</published>
+    <updated>2021-07-05T03:14:59.279Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><p>前端安全、性能问题</p><ul><li>XSS 跨站脚本攻击(Cross Site Scripting)，为了不和层叠样式表(Cascading Style Sheets, CSS)的缩写混淆，故将跨站脚本攻击缩写为XSS。恶意攻击者往Web页面里插入恶意的Script代码，当用户浏览该页之时，嵌入其中Web里面的Script代码会被执行，从而达到恶意攻击用户的目的。</li><li>CSRF</li></ul></li><li><p>重绘、重排</p><ul><li>性能影响</li></ul></li><li><p>api请求数据明文加密</p></li><li><p>语义化</p></li><li><p>反爬虫</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;前端安全、性能问题&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;XSS 跨站脚本攻击(Cross Site Scripting)，为了不和层叠样式表(Cascading Style Sheets, CSS)的缩写混淆，故将跨站脚本攻击缩写为XSS。恶意攻击者往Web页面里插
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>pack</title>
+    <link href="http://ah-well.github.io/2019/05/15/pack/"/>
+    <id>http://ah-well.github.io/2019/05/15/pack/</id>
+    <published>2019-05-15T06:38:51.000Z</published>
+    <updated>2021-07-05T03:14:59.285Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="wepack"><a href="#wepack" class="headerlink" title="wepack"></a>wepack</h3><ul><li><p>webpack一些概念区别</p><ul><li>bundle：是由webpack打包出来的文件</li><li>chunk：是指webpack在进行模块依赖分析的时候，代码分割出来的代码块</li><li>module：是开发中的单个模块</li></ul></li><li><p>webpack gulp比较</p><ul><li>webpack是一个模块打包器，强调的是一个前端模块化方案，更侧重模块打包，我们可以把开发中的所有资源都看成是模块，通过loader和plugin对资源进行处理。</li><li>gulp是一个前端自动化构建工具，强调的是前端开发的工作流程，可以通过配置一系列的task，第一task处理的事情（如代码压缩，合并，编译以及浏览器实时更新等）。然后定义这些执行顺序，来让glup执行这些task，从而构建项目的整个开发流程。自动化构建工具并不能把所有的模块打包到一起，也不能构建不同模块之间的依赖关系。</li></ul></li><li><p>loader plugin</p><ul><li>loader用于加载某些资源文件。因为webpack本身只能打包common.js规范的js文件，对于其他资源如css，img等，是没有办法加载的，这时就需要对应的loader将资源转化，从而进行加载。</li><li>plugin用于扩展webpack的功能。不同于loader，plugin的功能更加丰富，比如压缩打包，优化，不只局限于资源的加载。</li></ul></li><li><p>webpack-dev-server 和 http服务器的区别</p><ul><li>webpack-dev-server使用内存来存储webpack开发环境下的打包文件，并且可以使用模块热更新，比传统的http服务对开发更加有效。</li></ul></li><li><p>devServer配置</p>  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">contentBase,  <span class="comment">// 为文件提供本地服务器</span></span><br><span class="line">port,         <span class="comment">// 监听端口，默认8080</span></span><br><span class="line">inline,       <span class="comment">// 设置为true,源文件发生改变自动刷新页面</span></span><br><span class="line">historyApiFallback  <span class="comment">// 依赖HTML5 history API,如果设置为true,所有的页面跳转指向index.html</span></span><br><span class="line"><span class="attr">devServer</span>:&#123;</span><br><span class="line">    <span class="attr">contentBase</span>: <span class="string">&#x27;./src&#x27;</span>         <span class="comment">// 本地服务器所加载的页面所在的目录</span></span><br><span class="line">    <span class="attr">historyApiFallback</span>: <span class="literal">true</span>,   <span class="comment">// 不跳转</span></span><br><span class="line">    <span class="attr">inline</span>: <span class="literal">true</span>                <span class="comment">// 实时刷新</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//然后我们在根目录下创建一个&#x27;webpack.config.js&#x27;，在&#x27;package.json&#x27;添加两个命令用于本地开发和生产发布</span></span><br><span class="line"><span class="string">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">            <span class="string">&quot;start&quot;</span>: <span class="string">&quot;webpack-dev-server&quot;</span>,</span><br><span class="line">            <span class="string">&quot;build&quot;</span>: <span class="string">&quot;webpack&quot;</span></span><br></pre></td></tr></table></figure></li></ul><hr><h3 id="fis3"><a href="#fis3" class="headerlink" title="fis3"></a>fis3</h3><h3 id="gulp"><a href="#gulp" class="headerlink" title="gulp"></a>gulp</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;wepack&quot;&gt;&lt;a href=&quot;#wepack&quot; class=&quot;headerlink&quot; title=&quot;wepack&quot;&gt;&lt;/a&gt;wepack&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;webpack一些概念区别&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;bundle：是由webpack打包
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vue试题</title>
+    <link href="http://ah-well.github.io/2019/05/14/inter-vue/"/>
+    <id>http://ah-well.github.io/2019/05/14/inter-vue/</id>
+    <published>2019-05-14T15:16:33.000Z</published>
+    <updated>2021-07-05T03:14:59.280Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="vue试题"><a href="#vue试题" class="headerlink" title="vue试题"></a>vue试题</h3><ul><li><p>vue视图不会更新</p><ul><li>data里边设置 $set</li></ul></li><li><p>nextTick()</p><ul><li>在Vue生命周期的created()钩子函数进行的DOM操作一定要放在Vue.nextTick()的回调函数中</li></ul></li><li><p>vue路由导航钩子（）</p><ol><li><p>全局导航钩子：分为前置守卫、后置钩子</p><ol><li><p>前置守卫：router.beforeEach</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter(&#123; ... &#125;);</span><br><span class="line">router.beforeEach(<span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// do someting</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><blockquote><p>next 方法必须要调用，否则钩子函数无法 resolved</p></blockquote></li><li><p>to: Route，代表要进入的目标，它是一个路由对象</p></li><li><p>from: Route，代表当前正要离开的路由，同样也是一个路由对象</p></li><li><p>next: Function，这是一个必须需要调用的方法，而具体的执行效果则依赖 next 方法调用的参数<br> next()：进入管道中的下一个钩子，如果全部的钩子执行完了，则导航的状态就是 confirmed（确认的）<br> next(false)：这代表中断掉当前的导航，即 to 代表的路由对象不会进入，被中断，此时该表 URL 地址会被重置到 from 路由对应的地址<br> next(‘/‘) 和 next({path: ‘/‘})：在中断掉当前导航的同时，跳转到一个不同的地址<br> next(error)：如果传入参数是一个 Error 实例，那么导航被终止的同时会将错误传递给 router.onError() 注册过的回调</p></li><li><p>后置钩子：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">router.afterEach(<span class="function">(<span class="params">to, <span class="keyword">from</span></span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// do someting</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&gt; 不同于前置守卫，后置钩子并没有 next 函数，也不会改变导航本身</span><br></pre></td></tr></table></figure></li></ol></li><li><p>路由独享的钩子：单个路由独享的导航钩子，它是在路由配置上直接进行定义的</p></li></ol></li><li><p>Vuex 状态管理</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;vue试题&quot;&gt;&lt;a href=&quot;#vue试题&quot; class=&quot;headerlink&quot; title=&quot;vue试题&quot;&gt;&lt;/a&gt;vue试题&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;vue视图不会更新&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;data里边设置 $set&lt;/li&gt;
+&lt;/ul&gt;
+&lt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>memory</title>
+    <link href="http://ah-well.github.io/2019/05/12/memory/"/>
+    <id>http://ah-well.github.io/2019/05/12/memory/</id>
+    <published>2019-05-12T12:42:41.000Z</published>
+    <updated>2021-07-05T03:14:59.285Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>interview</title>
+    <link href="http://ah-well.github.io/2019/04/28/interview/"/>
+    <id>http://ah-well.github.io/2019/04/28/interview/</id>
+    <published>2019-04-28T04:55:31.000Z</published>
+    <updated>2021-07-05T03:14:59.280Z</updated>
+    
+    <content type="html"><![CDATA[<p>鉴于最近这段时间疯狂面试的体验，决定写一些文字记录下来。<br>一切原因都是自身技术短板太多，以及性格上一定程度的缺陷吧！</p><hr><h3 id="面试准备"><a href="#面试准备" class="headerlink" title="面试准备"></a>面试准备</h3><ul><li>简历（分电子档和纸质，看情况选择）</li><li>注意下外形（刮胡子之类的）</li><li>刷一波面试题</li><li>背包-雨伞-电源-充电器-充电线-手机</li><li>突出自己的优势（英文阅读、PS、后端基础）</li></ul><h3 id="面试流程"><a href="#面试流程" class="headerlink" title="面试流程"></a>面试流程</h3><ul><li>填写来客访问记录表</li><li>hr面（中间填写一些个人信息以及面试题，偶尔还有一些性格、心理、智商测试的题目 orz）</li><li>技术面（根据题目的反馈来对面试者进行第一次定位，然后在交谈中进行二次定位）</li><li>hr二面（中间可能会有上机操作，也可能有复试）</li></ul><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul><li>单双休、大小周，薪资，发薪日期</li><li>午休时间、加班情况</li><li>地段</li><li>业务项目（定制的是外包的说辞）、团队稳定</li></ul><hr><h3 id="还需了解"><a href="#还需了解" class="headerlink" title="还需了解"></a>还需了解</h3><ul><li><p>基础框架</p></li><li><p>构建工具</p></li><li><p>持续集成</p></li><li><p>系统测试</p></li><li><p>上线部署</p></li><li><p>性能优化</p></li><li><p>监控统计</p></li><li><p><input disabled="" type="checkbox">  前端跨域、安全、性能</p></li><li><p><input disabled="" type="checkbox">  http协议、状态码、https</p></li><li><p><input disabled="" type="checkbox">  数据类型（基本、引用），类型判断</p></li><li><p><input disabled="" type="checkbox">  原型链</p></li><li><p><input disabled="" type="checkbox">  懒加载、预加载</p></li><li><p><input disabled="" type="checkbox">  节流防抖</p></li><li><p><input disabled="" type="checkbox">  call bind applay</p></li><li><p><input disabled="" type="checkbox">  js原生、事件委托、组件开发</p></li><li><p><input disabled="" type="checkbox">  深、浅拷贝</p></li><li><p><input disabled="" type="checkbox">  闭包</p></li><li><p><input disabled="" type="checkbox">  递归函数</p></li><li><p><input disabled="" type="checkbox">  回调函数</p></li><li><p><input disabled="" type="checkbox">  排序、数组去重、一位数组转二维数组</p></li><li><p><input disabled="" type="checkbox">  xml、json</p></li><li><p><input disabled="" type="checkbox">  缓存cookie session</p></li><li><p><input disabled="" type="checkbox">  盒子模型</p></li><li><p><input disabled="" type="checkbox">  垂直居中</p></li><li><p><input disabled="" type="checkbox">  css属性、css3新特性、动画animation、css hack</p></li><li><p><input disabled="" type="checkbox">  浏览器内核、h5新特性</p></li><li><p><input disabled="" type="checkbox">  meta、head标签里的东西</p></li><li><p><input disabled="" type="checkbox">  页面布局</p></li><li><p><input disabled="" type="checkbox">  移动端适配</p></li><li><p><input disabled="" type="checkbox">  缓存问题、localStorage、sessionStorage、Cookie</p></li><li><p><input disabled="" type="checkbox">  vue组件传值</p></li><li><p><input disabled="" type="checkbox">  底层原理、生命周期</p></li><li><p><input disabled="" type="checkbox">  virtual dom</p></li><li><p><input disabled="" type="checkbox">  路由导航钩子</p></li><li><p><input disabled="" type="checkbox">  视图不更新 $set</p></li><li><p><input disabled="" type="checkbox">  ES6、Promise、await/async</p></li><li><p><input disabled="" type="checkbox">  shell、cmd、terminal</p></li><li><p><input disabled="" type="checkbox">  websocket</p></li><li><p><input disabled="" type="checkbox">  AMD、CMD</p></li><li><p><input disabled="" type="checkbox">  docker镜像创建、启动、删除</p></li><li><p><input disabled="" type="checkbox">  jira TFS</p></li><li><p><input disabled="" type="checkbox">  Ionic3+ 打包、测试、热更新</p></li><li><p><input disabled="" type="checkbox">  WebGL</p></li><li><p><input disabled="" type="checkbox">  F2</p></li><li><p><input disabled="" type="checkbox">  highcharts</p></li><li><p><input disabled="" type="checkbox">  rollup、 parcel、grunt、gulp、wepack</p></li><li><p><input disabled="" type="checkbox">  小程序图片批量上传、物联网TCP连接、OOS</p></li><li><p><input disabled="" type="checkbox">  mpvue、vant、</p></li><li><p><input disabled="" type="checkbox">  参与开源项目</p></li><li><p><input disabled="" type="checkbox">  hybird 混合app开发</p></li><li><p><input disabled="" type="checkbox">  微信内嵌h5、浏览器内置h5</p></li><li><p><input disabled="" type="checkbox">  react、angular</p></li><li><p><input disabled="" type="checkbox">  微信小程序框架</p></li><li><p><input disabled="" type="checkbox">  Linux命令</p></li><li><p><input disabled="" type="checkbox">  node</p></li><li><p><input disabled="" type="checkbox">  sql语句</p></li><li><p><input disabled="" type="checkbox">  接口</p></li><li><p><input disabled="" type="checkbox">  websocket</p></li><li><p><input disabled="" type="checkbox">  oss、物联网、连接方式</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;鉴于最近这段时间疯狂面试的体验，决定写一些文字记录下来。&lt;br&gt;一切原因都是自身技术短板太多，以及性格上一定程度的缺陷吧！&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;面试准备&quot;&gt;&lt;a href=&quot;#面试准备&quot; class=&quot;headerlink&quot; title=&quot;面试准备&quot;&gt;&lt;/a&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>GitLearn</title>
+    <link href="http://ah-well.github.io/2019/04/11/gitLearn/"/>
+    <id>http://ah-well.github.io/2019/04/11/gitLearn/</id>
+    <published>2019-04-11T07:56:23.000Z</published>
+    <updated>2021-07-05T03:14:59.277Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="什么是Git"><a href="#什么是Git" class="headerlink" title="什么是Git"></a>什么是Git</h2><blockquote><p>linus用C语言写的分布式版本控制系统。前者有CVS、SVN这些集中式的版本控制系统，但速度慢，且需联网，另有一些系统比这两者好用，不过需要付费，与Linux的开源精神不符，如BitKeeper。也正是它的东家BitMover公司因为开发Samba的Andrew试图破解BitKeeper的协议（据说不止他一个），要收回Linux社区的免费使用权，才迫使Linus在两周之内自己动手用C写了一个分布式版本控制系统。并在一个月内转移Linux的源码由Git来管理了。</p></blockquote><hr><h2 id="集中式vs分布式"><a href="#集中式vs分布式" class="headerlink" title="集中式vs分布式"></a>集中式vs分布式</h2><ul><li><p> 集中式和分布式，一个版本对应多个版本</p></li><li><p> 集中式必须联网才能工作，无网络状态下无法回退到之前的某个版本</p></li><li><p>Git速度快、灵活，任意两个开发者之间可以很容易的解决冲突。</p><ul><li>Git代码保密性差，一旦开发者把整个库克隆下来就可以完全公开所有代码和版本信息。学习周期长</li></ul></li></ul><hr><h2 id="Git基本概念"><a href="#Git基本概念" class="headerlink" title="Git基本概念"></a>Git基本概念</h2><ul><li>工作区：就是你在电脑里能看到的目录。</li><li>暂存区：英文叫stage, 或index。一般存放在 “.git目录下” 下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。</li><li>版本库：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。</li></ul><h3 id="Git工作流"><a href="#Git工作流" class="headerlink" title="Git工作流"></a>Git工作流</h3><ul><li><p>克隆 Git 资源作为工作目录。</p></li><li><p>在克隆的资源上添加或修改文件。</p></li><li><p>如果其他人修改了，你可以更新资源。</p></li><li><p>在提交前查看修改。</p></li><li><p>提交修改。</p></li><li><p>在修改完成后，如果发现错误，可以撤回提交并再次修改并提交。</p><p><img src="https://7n.w3cschool.cn/attachments/day_160929/201609291518243574.png" alt="工作流"></p></li></ul><h3 id="git创建仓库"><a href="#git创建仓库" class="headerlink" title="git创建仓库"></a>git创建仓库</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">git init                    在当前目录下创建Git仓库</span><br><span class="line">git init newrepo            使用指定目录作为Git仓库</span><br><span class="line">git add                     命令可将该文件添加到缓存</span><br><span class="line"></span><br><span class="line">git status                  命令用于查看项目的当前状态</span><br><span class="line">git status -s               简短的结果输出。如果没加该参数会详细输出内容</span><br><span class="line">git diff                    显示已写入缓存与已修改但尚未写入缓存的改动的区别</span><br><span class="line">  git diff --cached         查看已缓存的改动</span><br><span class="line">  git diff HEAD             查看已缓存的与未缓存的所有改动</span><br><span class="line">  git diff --stat           显示摘要而非整个diff</span><br><span class="line"></span><br><span class="line">git commit                  记录缓存区的快照</span><br><span class="line">  git commit -m             记录缓存提供提交注释</span><br><span class="line">  git commit -a             跳过git add 提交缓存的流程</span><br><span class="line"></span><br><span class="line">git reset HEAD              取消缓存已缓存的内容</span><br><span class="line">  git reset HEAD -- [文件名] </span><br><span class="line">git rm                      将文件从缓存区中移除，默认情况下，会将文件从缓存区和你的硬盘中（工作目录）删除      </span><br><span class="line">  git rm --cached           在工作目录中留着该文件，仅删除缓存区的文件</span><br><span class="line">  git mv                    相当于git rm --cached 有点多余</span><br><span class="line"></span><br><span class="line">// 初始化后，在当前目录下会出现一个名为 .git 的目录，所有 Git 需要的数据和资源都存放在这个目录中。</span><br><span class="line">// 如果当前目录下有几个文件想要纳入版本控制，需要先用 git add 命令告诉 Git 开始对这些文件进行跟踪，然后提交：</span><br><span class="line">git add *.c         </span><br><span class="line">git add README</span><br><span class="line">git commit -m &#x27;initial project version&#x27;</span><br><span class="line"></span><br><span class="line">// 从现有仓库克隆，如果要自己定义要新建的项目目录名称，可以在上面的命令末尾指定新的名字：</span><br><span class="line">git clone [url]       </span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git branch (branchname)           创建分支</span><br><span class="line">git checkout (branchname)         切换分支</span><br><span class="line">git merge                         合并分支</span><br><span class="line"></span><br><span class="line">git branch                        列出分支</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;什么是Git&quot;&gt;&lt;a href=&quot;#什么是Git&quot; class=&quot;headerlink&quot; title=&quot;什么是Git&quot;&gt;&lt;/a&gt;什么是Git&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;linus用C语言写的分布式版本控制系统。前者有CVS、SVN这些集中式的版本控制
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>code</title>
+    <link href="http://ah-well.github.io/2019/04/04/code/"/>
+    <id>http://ah-well.github.io/2019/04/04/code/</id>
+    <published>2019-04-04T08:39:47.000Z</published>
+    <updated>2021-07-05T03:14:59.274Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>函数式编程<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;3&#x27;</span>, <span class="string">&#x27;4&#x27;</span>].map(<span class="built_in">parseInt</span>) <span class="comment">// [2, NaN, NaN]</span></span><br></pre></td></tr></table></figure><ul><li>因为 map 的算子是有两个参数的，第一个参数是被迭代数组的元素，第二个参数是该元素的下标。所以 [‘2’, ‘3’, ‘4’].map(parseInt) 实际上相当于执行了 [parseInt(‘2’, 0), parseInt(‘3’, 1), parseInt(‘4’, 2)]，结果就变成了 [2, NaN, NaN] 了。</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;函数式编程&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pr
+      
+    
+    </summary>
+    
+    
+      <category term="题目" scheme="http://ah-well.github.io/tags/%E9%A2%98%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS Object</title>
+    <link href="http://ah-well.github.io/2019/04/04/JSObject/"/>
+    <id>http://ah-well.github.io/2019/04/04/JSObject/</id>
+    <published>2019-04-04T03:36:07.000Z</published>
+    <updated>2021-07-05T03:14:59.273Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><p>在JavaScript的世界里万物皆对象</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typeof</span> <span class="number">123</span>; <span class="comment">// &#x27;number&#x27;</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="literal">NaN</span>; <span class="comment">// &#x27;number&#x27;</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="string">&#x27;str&#x27;</span>; <span class="comment">// &#x27;string&#x27;</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="literal">true</span>; <span class="comment">// &#x27;boolean&#x27;</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="literal">undefined</span>; <span class="comment">// &#x27;undefined&#x27;</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="built_in">Math</span>.abs; <span class="comment">// &#x27;function&#x27;</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="literal">null</span>; <span class="comment">// &#x27;object&#x27;</span></span><br><span class="line"><span class="keyword">typeof</span> []; <span class="comment">// &#x27;object&#x27;</span></span><br><span class="line"><span class="keyword">typeof</span> &#123;&#125;; <span class="comment">// &#x27;object&#x27;</span></span><br></pre></td></tr></table></figure><ul><li>可见，number、string、boolean、function和undefined有别于其他类型。特别注意null的类型是object，Array的类型也是object，如果我们用typeof将无法区分出null、Array和通常意义上的object——{}。</li></ul></li><li><p>注意一下几点</p><ul><li>不要使用new Number()、new Boolean()、new String()创建包装对象；</li><li>用parseInt()或parseFloat()来转换任意类型到number；</li><li>用String()来转换任意类型到string，或者直接调用某个对象的toString()方法；</li><li>通常不必把任意类型转换为boolean再判断，因为可以直接写if (myVar) {…}；</li><li>typeof操作符可以判断出number、boolean、string、function和undefined；</li><li>判断Array要使用Array.isArray(arr)；</li><li>判断null请使用myVar === null；</li><li>判断某个全局变量是否存在用typeof window.myVar === ‘undefined’；</li><li>函数内部判断某个变量是否存在用typeof myVar === ‘undefined’。</li></ul></li><li><p>Date 里的月份是从0开始</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;在JavaScript的世界里万物皆对象&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span cl
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>记录sublime的一些快捷键和插件</title>
+    <link href="http://ah-well.github.io/2019/04/03/sublime/"/>
+    <id>http://ah-well.github.io/2019/04/03/sublime/</id>
+    <published>2019-04-03T09:05:58.000Z</published>
+    <updated>2021-07-05T03:14:59.312Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><ul><li>SublimeLinter        </li><li>Sublime CodeIntel </li><li>Bracket Highlighter</li><li>CSScomb </li><li>SublimeTmpl          =快速生成文件模板</li><li>SideBarEnhancements</li><li>ColorPicker          ctrl+shift+c</li><li>Tag                  = Html格式化</li><li>GBK to UTF8         =GBK转黄成UTF8</li><li>Alignment            Ctrl+Alt+A</li><li>Emmet               </li><li>Prefixr             </li><li>AutoFileName</li><li>CodeFormatter</li><li>ConvertToUTF8</li><li>DocBlockr</li><li>JsFormat</li><li>Terminal Ctrl+Shift+T呼出命令行窗口</li><li>git：git</li><li>jQuery：jQuery</li><li>ConvertToUTF8：转码成utf-8，解决乱码</li><li>Sass</li><li>LESS</li><li>Less2CSS</li><li>功能：编译Less</li><li>简介：监测到文件改动时，编译保存为.css文件</li><li>GOanything</li><li>IMESupport</li><li>功能：sublime中文输入法</li><li>Ctrl + Shift + P →输入pci →输入IMESupport →回车</li><li>FileDiffs  比较代码不同</li><li>CanIUse 如果您想检查浏览器是否支持你包括在你的代码中的CSS和HTML元素，那么这是你需要的插件。所有您需要做的就是选择有疑问的元素，插件将为你做其余的事情。</li><li>Tag HTML/XML标签缩进、补全、排版和校验工具</li><li>Trimmer  </li><li>TrailingSpaces</li><li>Trimmer</li><li>Clipboard History</li><li>功能：粘贴板历史记录</li><li>MarkdownEditing<br>PHPTidy             =排版PHP代码</li><li>YUI Compressor      =压缩JS和CSS文件</li><li>Clipboard History   = 剪贴板历史记录</li></ul><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><ul><li>光标类<ul><li>Ctrl+D 选中光标所占的文本，继续操作则会选中下一个相同的文本。</li><li>Alt+F3 选中文本按下快捷键，即可一次性选择全部的相同文本进行同时编辑。举个栗子：快速选中并更改所有相同的变量名、函数名等。</li><li>Ctrl+L 选中整行，继续操作则继续选择下一行，效果和 Shift+↓ 效果一样。</li><li>Ctrl+Shift+L 先选中多行，再按下快捷键，会在每行行尾插入光标，即可同时编辑这些行。</li><li>Ctrl+Shift+M 选择括号内的内容（继续选择父括号）。举个栗子：快速选中删除函数中的代码，重写函数体代码或重写括号内里的内容。</li><li>Ctrl+M 光标移动至括号内结束或开始的位置。</li><li>Ctrl+Enter 在下一行插入新行。举个栗子：即使光标不在行尾，也能快速向下插入一行。</li><li>Ctrl+Shift+Enter 在上一行插入新行。举个栗子：即使光标不在行首，也能快速向上插入一行。</li><li>Ctrl+Shift+[ 选中代码，按下快捷键，折叠代码。</li><li>Ctrl+Shift+] 选中代码，按下快捷键，展开代码。</li><li>Ctrl+K+0 展开所有折叠代码。</li><li>Ctrl+← 向左单位性地移动光标，快速移动光标。</li><li>Ctrl+→ 向右单位性地移动光标，快速移动光标。</li><li>shift+↑ 向上选中多行。</li><li>shift+↓ 向下选中多行。</li><li>Shift+← 向左选中文本。</li><li>Shift+→ 向右选中文本。</li><li>Ctrl+Shift+← 向左单位性地选中文本。</li><li>Ctrl+Shift+→ 向右单位性地选中文本。</li><li>Ctrl+Shift+↑ 将光标所在行和上一行代码互换（将光标所在行插入到上一行之前）。</li><li>Ctrl+Shift+↓ 将光标所在行和下一行代码互换（将光标所在行插入到下一行之后）。</li><li>Ctrl+Alt+↑ 向上添加多行光标，可同时编辑多行。</li><li>Ctrl+Alt+↓ 向下添加多行光标，可同时编辑多行。</li></ul></li><li>编辑类<ul><li>Ctrl+J 合并选中的多行代码为一行。举个栗子：将多行格式的CSS属性合并为一行。</li><li>Ctrl+Shift+D  复制光标所在整行，插入到下一行。</li><li>Tab       向右缩进。</li><li>Shift+Tab 向左缩进。</li><li>Ctrl+K+K  从光标处开始删除代码至行尾。</li><li>Ctrl+Shift+K 删除整行。</li><li>Ctrl+/    注释单行。</li><li>Ctrl+Shift+/ 注释多行。</li><li>Ctrl+K+U  转换大写。</li><li>Ctrl+K+L  转换小写。</li><li>Ctrl+Z    撤销。</li><li>Ctrl+Y    恢复撤销。</li><li>Ctrl+U    软撤销，感觉和 Gtrl+Z 一样。</li><li>Ctrl+F2   设置书签</li><li>Ctrl+T    左右字母互换。</li><li>F6        单词检测拼写</li></ul></li><li>搜索类<ul><li>Ctrl+F        打开底部搜索框，查找关键字。</li><li>Ctrl+shift+F  在文件夹内查找，与普通编辑器不同的地方是sublime允许添加多个文件夹进行查找，略高端，未研究。</li><li>Ctrl+P        打开搜索框。举个栗子：1、输入当前项目中的文件名，快速搜索文件，2、输入@和关键字，查找文件中函数名，3、输入：和数字，跳转到文件中该行代码，4、输入#和关键字，查找变量名。</li><li>Ctrl+G        打开搜索框，自动带：，输入数字跳转到该行代码。举个栗子：在页面代码比较长的文件中快速定位。</li><li>Ctrl+R        打开搜索框，自动带@，输入关键字，查找文件中的函数名。举个栗子：在函数较多的页面快速查找某个函数。</li><li>Ctrl+：       打开搜索框，自动带#，输入关键字，查找文件中的变量名、属性名等。</li><li>Ctrl+Shift+P  打开命令框。场景栗子：打开命名框，输入关键字，调用sublime text或插件的功能，例如使用package安装插件。</li><li>Esc           退出光标多行选择，退出搜索框，命令框等。</li></ul></li><li>显示类<ul><li>Ctrl+Tab      按文件浏览过的顺序，切换当前窗口的标签页。</li><li>Ctrl+PageDown 向左切换当前窗口的标签页。</li><li>Ctrl+PageUp   向右切换当前窗口的标签页。</li><li>Alt+Shift+1   窗口分屏，恢复默认1屏（非小键盘的数字）</li><li>Alt+Shift+2   左右分屏-2列</li><li>Alt+Shift+3   左右分屏-3列</li><li>Alt+Shift+4   左右分屏-4列</li><li>Alt+Shift+5   等分4屏</li><li>Alt+Shift+8   垂直分屏-2屏</li><li>Alt+Shift+9   垂直分屏-3屏</li><li>Ctrl+K+B      开启/关闭侧边栏。</li><li>F11           全屏模式</li><li>Shift+F11     免打扰模式</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;插件&quot;&gt;&lt;a href=&quot;#插件&quot; class=&quot;headerlink&quot; title=&quot;插件&quot;&gt;&lt;/a&gt;插件&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;SublimeLinter        &lt;/li&gt;
+&lt;li&gt;Sublime CodeIntel &lt;/li&gt;
+&lt;li&gt;Brack
+      
+    
+    </summary>
+    
+    
+      <category term="编辑器" scheme="http://ah-well.github.io/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>something</title>
+    <link href="http://ah-well.github.io/2019/04/03/something/"/>
+    <id>http://ah-well.github.io/2019/04/03/something/</id>
+    <published>2019-04-03T06:21:38.000Z</published>
+    <updated>2021-07-05T03:14:59.311Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="something-else"><a href="#something-else" class="headerlink" title="something else"></a>something else</h3><ul><li><p>Any words I won’t say to them, I only want to develop myself firstly.</p></li><li><p>I am tired.And I have to keep sadness and grief away from me.</p></li><li><p>Now I should read more technical books and practice more codes.</p></li><li><p>Anything I won’t think about all the day, just do it.</p></li><li><p>I will keep myself learning something new, both technology and life.</p></li><li><p>怎么说吧，现阶段挺尴尬的，周围也尽是相似的风景，坚持自己的初心吧。</p></li><li><p>掘金url hash</p></li><li><p>nodejs、混合app、</p></li><li><p>flutter、</p></li><li><p>算法,聊天,面试,网络</p></li><li><p>网络是怎样连接的</p></li><li><p>HTTP 权威指南</p></li><li><p>JavaScript 面向对象精要</p></li><li><p>现代前端技术解析</p></li><li><p>深入理解 ES6</p></li><li><p>ES6 标准入门</p></li><li><p>高性能的 JavaScript</p></li><li><p>JavaScript 语言精粹</p></li><li><p>数据结构与算法 JavaScript 描述</p></li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br></pre></td><td class="code"><pre><span class="line">前言</span><br><span class="line">嗯ennnnnn，，，，懒癌症拖延的毛病，趁着最后一个上班日赶紧把最近一周的面试做个总结(虽然我下周一才入职)，作为一位去年才毕业的前端妹子来说，其实还是个技术小白啦，近几年还是想在技术上能有一个很大的提升，而且不是说金三银四嘛(嘤嘤嘤，好像是真的)，所以在试水了两家公司之后，开启了我一周左右的面经之路，大大小小的公司都有面，我就是奔着涨知识和积累经验去的！！！加起来差不多10家公司左右吧，成绩自己也还挺满意的，拿到了6家公司的offer，大小公司也都有，像大华、华三，但是最终综合考虑的结果，去了一家自己面试体验最好的公司，至少也是一家上市公司啦~</span><br><span class="line"></span><br><span class="line">面试前需要注意的细节点</span><br><span class="line">简历一定要写好，这个不用多说啦</span><br><span class="line">先想清楚你辞职想去的下一家的初衷是什么，是加薪资、提升技术 or 换个工作环境。根据你自己的真实情况，投简历的时候针对性地看看公司的招聘要求，先看看符合度是多少，以免遇到要求极度不符合又没有在商量的前提下去面试了，最后的结果可能就是你还不错，但是不符合我们公司的要求。</span><br><span class="line">准备工作要做好，我是因为才去年毕业啦，所以集中准备在基础知识和目前在用的VUE框架这两块啦，其他的知识点我平时在撸代码的时候都有在做笔记，所以都会扫一遍知识点，其他的你实际工作中没有用到的但是比较流行的也不能忽略哦，了解一下或者临时补一下，不要被问到没有听过有点尴尬的。面试完一家记得被面到不会的要做笔记做笔记！！！！就当做是学习吧，而且有时候真的受益匪浅~</span><br><span class="line">规划好你自己的面试时间，提前要面试的公司做个简单的背景了解。我是一个比较想把时间集中在一起做的人，所以提完离职后专心面试，一天会安排2-3家面试，面试前看看你即将面试的公司规模大小背景简单地了解一下，公司的面试流程一般是笔试 or 电话面试 (可无) —&gt; 技术面(1-2轮) —&gt; HR面 。</span><br><span class="line">面试知识点</span><br><span class="line">在面两个大公司和一个小公司的时候，尤其是一个传统行业的大型公司时，也有可能是我年限的问题，尤其注意基础，无论是笔试还是技术主管面试的时候都集中在这块，像原生JS、原生Ajax等，，(这些虽然我在工作中用的也不是很多ennnn,原生的是用的不多，但是我自己很注重)，说下面试碰到的吧(一些记不住了，想起来我补上哈~)。</span><br><span class="line"></span><br><span class="line">HTML以及CSS篇，集中在CSS</span><br><span class="line">说下你常用的几种布局方式</span><br><span class="line">集中往盒模型、flex布局说(至于grid布局，这个我看过没有用到过)</span><br><span class="line">实现水平居中的几种方法？</span><br><span class="line">animate和translate有没有用过，一些常见的属性说下？</span><br><span class="line">CSS实现宽度自适应100%，宽高16:9的比例的矩形。</span><br><span class="line">如何实现左边两栏一定比例，左栏高度随右栏高度自适应？</span><br><span class="line">JavaScript篇(重要)</span><br><span class="line">变量提升遇到的一些简单code题</span><br><span class="line">说一下对闭包的理解，以及你在什么场景下会用到闭包？</span><br><span class="line">说一下你对原型与原型链的了解度，有几种方式可以实现继承，用原型实现继承有什么缺点，怎么解决？</span><br><span class="line">iframe的缺点有哪些？</span><br><span class="line">Ajax的原生写法</span><br><span class="line">为什么会有同源策略？</span><br><span class="line">前端处理跨域有没有遇到过，处理跨域的方式有哪几种方式去解决</span><br><span class="line">怎么判断两个对象是否相等</span><br><span class="line">代码实现一个对象的深拷贝</span><br><span class="line">从发送一个url地址到返回页面，中间发生了什么</span><br><span class="line">说下工作中你做过的一些性能优化处理</span><br><span class="line">ES6篇(引导篇，相对重要)</span><br><span class="line">这块面试官主要是问你哪块用的比较多，你可以引导性地把面试官往你会的地方说</span><br><span class="line"></span><br><span class="line">箭头函数中的this指向谁？</span><br><span class="line">如何实现一个promise，promise的原理，以及它的两个参数是什么？</span><br><span class="line">promise中第二个参数的reject中执行的方法和promise.catch()都是失败执行的，分别这么写有什么区别，什么情况下会两个都同时用到？</span><br><span class="line">map和set有没有用过，如何实现一个数组去重，map数据结构有什么优点？</span><br><span class="line">计算机网络篇(相对重要)</span><br><span class="line">ennnnn,因为我专业是网络工程的，在华三和另一家公司面试的时候没有被少问这些问题</span><br><span class="line"></span><br><span class="line">http、https、以及websocket的区别</span><br><span class="line">http常见的状态码，400,401,403状态码分别代表什么？</span><br><span class="line">协商缓存和强缓存的区别</span><br><span class="line">说下计算机网络的相关协议？</span><br><span class="line">浏览器兼容性问题</span><br><span class="line">因为我的工作主要还在专注在web端，所以浏览器兼容性的问题没有少碰到过，因主要是兼容IE8以上以及其他各个浏览器，这个就当做总结一下吧(在被问到这一块的时候其实我是有加分的，因为回答的比较多2333)</span><br><span class="line"></span><br><span class="line">使用meta标签来调节浏览器的渲染方式，告诉浏览器用哪种内核渲染，360双核浏览器就是在ie和chrome之间来回切换，现在使用meta标签来强制使用最新的内核渲染页面</span><br><span class="line"></span><br><span class="line">&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;</span><br><span class="line">rgba不支持IE8</span><br><span class="line">解决：用opacity</span><br><span class="line">CSS3前缀</span><br><span class="line"></span><br><span class="line">-webkit- webkit渲染引擎  chrome/safari</span><br><span class="line">-moz gecko引擎    firefox</span><br><span class="line">-ms- trident渲染引擎 IE</span><br><span class="line">-o-    opeck渲染引擎 opera</span><br><span class="line">过渡不兼容IE8，可以用JS动画实现</span><br><span class="line">background-size不支持IE8，可以用img</span><br><span class="line">使用PIE.htc让IE6/7/8支持CSS3部分属性，像CSS3的border-radius，box-shadow，css backgrounds(-pie-background),Gradients,RGBA属性</span><br><span class="line"></span><br><span class="line">.border-radius &#123;</span><br><span class="line">border-radius: 10px;</span><br><span class="line">-webkit-border-radius: 10px;</span><br><span class="line">-moz-border-radius: 10px;</span><br><span class="line">background: #abcdef;</span><br><span class="line">behavior: url(css/PIE.htc);</span><br><span class="line"> &#125;</span><br><span class="line">用css hack</span><br><span class="line"></span><br><span class="line">IE6: _</span><br><span class="line">IE7/7: *</span><br><span class="line">IE7/Firefox: !important</span><br><span class="line">IE7: *+</span><br><span class="line">IE6/7/8: \9</span><br><span class="line">IE8: \0</span><br><span class="line">:IE浮动margin产生的双倍距离,通常使用float:left来实现，浏览器存在兼容性问题，导致图片与 后面的内容存在margin不一致的问题，解决方法就是给图片添加diaplay:inline即可</span><br><span class="line"></span><br><span class="line">ie8不支持nth-child，但支持first-child和last-child，可以通过转化写法来处理问题，span:nth-child(2)可以转换为span:first-child+span,可以使ie8显示该内容，last-child可以自定义一个class类兼容ie8写法</span><br><span class="line">IE8下不支持HTML5属性placeholder，解决问题的js插件挺多的，常用的使用jquery.JPlaceholder.js插件处理问题</span><br><span class="line">识别HTML5元素，IE中可能无法识别nav/footer，使用html5shiv</span><br><span class="line">火狐下表单阻止表单默认提交事件：在form中添加 action=&quot;javascript:&quot;,秒杀上述所有默认行为;</span><br><span class="line">始终为按钮button添加type属性，IE下的默认类型是button，其他浏览器下的默认类型是submit</span><br><span class="line">IE下删除所有不必要的console语句，IE下当遇到console时不识别之后报错，代码不会执行，或者全局自定义一个window.console方法</span><br><span class="line">IE浏览器下由于参数过长导致通过GET请求下载文件方法报错，解决改为POST请求</span><br><span class="line">IE浏览器下iframe弹窗中输入框光标丢失（无法输入）问题，解决清一下frame</span><br><span class="line">兼容IE8 new Date()返回NaN问题，解决自定义方法</span><br><span class="line"></span><br><span class="line">function parseISO8601(dateStringInRange) &#123;</span><br><span class="line">    var isoExp = /^\s*(\d&#123;4&#125;)-(\d\d)-(\d\d)\s*$/,</span><br><span class="line">        date = new Date(NaN), month,</span><br><span class="line">        parts = isoExp.exec(dateStringInRange);</span><br><span class="line"></span><br><span class="line">    if(parts) &#123;</span><br><span class="line">        month = +parts[2];</span><br><span class="line">        date.setFullYear(parts[1], month - 1, parts[3]);</span><br><span class="line">        if(month != date.getMonth() + 1) &#123;</span><br><span class="line">            date.setTime(NaN);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return date;</span><br><span class="line">&#125;</span><br><span class="line">Vue相关知识点 (框架之一重要)</span><br><span class="line">因为我简历上主要写的是会vue啦，其实也不是精通，因为边学边开发，主要是实践的项目不是特别复杂，不过常见的一些坑点还是有遇到的啦，这个是看你会的框架问相应的知识点</span><br><span class="line"></span><br><span class="line">简单阐述一下vue的生命周期</span><br><span class="line">如何实现一个自定义组件，不同组件之间如何通信的？</span><br><span class="line">父子组件如何通信的？</span><br><span class="line">前端路由有没有用过，你在项目中怎么实现路由的嵌套？</span><br><span class="line">nextTick和Vuex两个有没有用过，分为什么情况下用到？</span><br><span class="line">Vue的响应式原理你知道是怎么实现的吗？你觉得订阅者-发布者模式和观察者模式有区别吗？有的话，说一下它们的区别。</span><br><span class="line">构建工具</span><br><span class="line">因为项目还在前后端未分离的时候，我研究的gulp比较多，像grunt、fis3也有了解过，webpack还不是很熟(感觉要GG)，所以这块问的比较少，面试官也就没有这么问，不过我觉得还是有必要去熟悉或者实践一下一下</span><br><span class="line"></span><br><span class="line">Other</span><br><span class="line">有一些技术主管会考量一下你除了前端之外的技术能力，例如你熟悉的后端语言，sql会不会，还有人问我Linux命令会不会的(我内心:不会不会不会====),不过node多多少少都有在用，这个也是前端应该要会的啦(but技术小白我不会，只是用到一点点~)</span><br><span class="line"></span><br><span class="line">最后</span><br><span class="line">把面试当做学习，这个过程你会收益很大。自己也拿到了几家还不错的offer，最后选择了我比较满意的一家公司，我并没有特别在意薪资这块，都是综合考虑的一个结果啦！前端知识很杂，可能实际工作中用到的技术，像框架都是跟着公司的要求走的，像我最近也在看React啦，Vue和React都对比着再学习，不要问我为什么没有在看Angular(懒懒懒),因为新公司说是偏向于React，所以最重要的还是更看重基础知识的积累吧，当然，开心最重要~</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;something-else&quot;&gt;&lt;a href=&quot;#something-else&quot; class=&quot;headerlink&quot; title=&quot;something else&quot;&gt;&lt;/a&gt;something else&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Any words I w
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>computer</title>
+    <link href="http://ah-well.github.io/2019/04/02/computer/"/>
+    <id>http://ah-well.github.io/2019/04/02/computer/</id>
+    <published>2019-04-02T10:06:42.000Z</published>
+    <updated>2021-07-05T03:14:59.275Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>二进制</li><li>二叉树</li><li>进程</li><li>线程</li><li>网络协议</li><li></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;二进制&lt;/li&gt;
+&lt;li&gt;二叉树&lt;/li&gt;
+&lt;li&gt;进程&lt;/li&gt;
+&lt;li&gt;线程&lt;/li&gt;
+&lt;li&gt;网络协议&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="计算机" scheme="http://ah-well.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js basic</title>
+    <link href="http://ah-well.github.io/2019/04/02/js/"/>
+    <id>http://ah-well.github.io/2019/04/02/js/</id>
+    <published>2019-04-02T06:30:43.000Z</published>
+    <updated>2021-07-05T03:14:59.281Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="js-变量（大小写敏感）"><a href="#js-变量（大小写敏感）" class="headerlink" title="js 变量（大小写敏感）"></a>js 变量（大小写敏感）</h2><h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><ul><li>Number（数字）</li><li>String（字符串）</li><li>Boolean（布尔）</li><li>Symbol（符号）    （第六版新增）</li><li>Object（对象）     - 由键-值组成的无序集合<ul><li>Function（函数） (严格意义上也算Object)</li><li>Array（数组）    - 有序集合</li><li>Date（日期）</li><li>RegExp（正则表达式）</li></ul></li><li>Null（空）</li><li>Undefined（未定义）</li></ul><p>JavaScript 还有一种内置Error（错误）类型</p><h3 id="数字"><a href="#数字" class="headerlink" title="数字"></a>数字</h3><ul><li>JavaScript不区分整数和浮点数，统一用Number表示，以下都是合法的Number类型：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">123</span>;      <span class="comment">// 整数123</span></span><br><span class="line"><span class="number">0.456</span>;    <span class="comment">// 浮点数0.456</span></span><br><span class="line"><span class="number">1.2345e3</span>; <span class="comment">// 科学计数法表示1.2345x1000，等同于1234.5</span></span><br><span class="line">-<span class="number">99</span>;      <span class="comment">// 负数</span></span><br><span class="line"><span class="literal">NaN</span>;      <span class="comment">// NaN表示Not a Number，当无法计算结果时用NaN表示</span></span><br><span class="line"><span class="literal">Infinity</span>; <span class="comment">// 表示无限大，当数值超过了JavaScript的Number所能表示的最大值时，就表示为Infinity</span></span><br></pre></td></tr></table></figure></li><li>0.1 + 0.2 = 0.30000000000000004</li></ul><h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><ul><li>JavaScript 中的字符串是一串Unicode 字符序列</li></ul><h3 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h3><ul><li><p>通过布尔运算计算出来的结果</p></li><li><h3 id="undefined-null"><a href="#undefined-null" class="headerlink" title="undefined null"></a>undefined null</h3></li><li><p>JavaScript 允许声明变量但不对其赋值，一个未被赋值的变量就是 undefined 类型。还有一点需要说明的是，undefined 实际上是一个不允许修改的常量。</p></li><li><p>null表示一个空值（non-value），必须使用null关键字才能访问</p><h3 id="strict模式"><a href="#strict模式" class="headerlink" title="strict模式"></a>strict模式</h3><p>JavaScript在设计之初，为了方便初学者学习，并不强制要求用var申明变量。这个设计错误带来了严重的后果：如果一个变量没有通过var申明就被使用，那么该变量就自动被申明为全局变量：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">i = <span class="number">10</span>; <span class="comment">// i现在是全局变量</span></span><br></pre></td></tr></table></figure></li></ul><h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><ul><li><p>JavaScript用一个{…}表示一个对象，键值对以xxx: xxx形式申明，用,隔开。注意，最后一个键值对不需要在末尾加,，如果加了，有的浏览器（如低版本的IE）将报错。</p></li><li><p>访问属性是通过.操作符完成的，但这要求属性名必须是一个有效的变量名。如果属性名包含特殊字符，就必须用’’括起来：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xiaohong = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;小红&#x27;</span>,</span><br><span class="line">  <span class="string">&#x27;middle-school&#x27;</span>: <span class="string">&#x27;No.1 Middle School&#x27;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><ul><li>xiaohong的属性名middle-school不是一个有效的变量，就需要用’’括起来。访问这个属性也无法使用.操作符，必须用[‘xxx’]来访问：</li></ul></li><li><p>如果访问一个不存在的属性会返回什么呢？JavaScript规定，访问不存在的属性不报错，而是返回undefined：</p></li><li><p>由于JavaScript的对象是动态类型(这意味着相同的变量可用作不同的类型)，你可以自由地给一个对象添加或删除属性：</p></li><li><p>如果我们要检测xiaoming是否拥有某一属性，可以用in操作符, 不过要小心，如果in判断一个属性存在，这个属性不一定是xiaoming的，它可能是xiaoming继承得到的：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xiaoming = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;小明&#x27;</span>,</span><br><span class="line">  <span class="attr">birth</span>: <span class="number">1990</span>,</span><br><span class="line">  <span class="attr">school</span>: <span class="string">&#x27;No.1 Middle School&#x27;</span>,</span><br><span class="line">  <span class="attr">height</span>: <span class="number">1.70</span>,</span><br><span class="line">  <span class="attr">weight</span>: <span class="number">65</span>,</span><br><span class="line">  <span class="attr">score</span>: <span class="literal">null</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="string">&#x27;name&#x27;</span> <span class="keyword">in</span> xiaoming; <span class="comment">// true</span></span><br><span class="line"><span class="string">&#x27;grade&#x27;</span> <span class="keyword">in</span> xiaoming; <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;toString&#x27;</span> <span class="keyword">in</span> xiaoming; <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> xiaoming = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;小明&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line">xiaoming.hasOwnProperty(<span class="string">&#x27;name&#x27;</span>); <span class="comment">// true</span></span><br><span class="line">xiaoming.hasOwnProperty(<span class="string">&#x27;toString&#x27;</span>); <span class="comment">// false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明空对象的两种方法</span></span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line"><span class="keyword">var</span> obj = &#123;&#125;;</span><br></pre></td></tr></table></figure></li><li><p>因为toString定义在object对象中，而所有对象最终都会在原型链上指向object，所以xiaoming也拥有toString属性。要判断一个属性是否是xiaoming自身拥有的，而不是继承得到的，可以用hasOwnProperty()方法</p></li><li><h3 id="声明变量关键字-let-const-var"><a href="#声明变量关键字-let-const-var" class="headerlink" title="声明变量关键字 let const var"></a>声明变量关键字 let const var</h3></li><li><p>let 语句声明一个块级作用域的本地变量，并且可选的将其初始化为一个值。</p></li><li><p>const 允许声明一个不可变的常量。这个常量在定义域内总是可见的。</p></li><li><p>var 是最常见的声明变量的关键字。它没有其他两个关键字的种种限制。这是因为它是传统上在 JavaScript 声明变量的唯一方法。使用 var 声明的变量在它所声明的整个函数都是可见的。</p></li></ul><blockquote><p>JavaScript 与其他语言的（如 Java）的重要区别是在 JavaScript 中语句块（blocks）是没有作用域的，只有函数有作用域。因此如果在一个复合语句中（如 if 控制结构中）使用 var 声明一个变量，那么它的作用域是整个函数（复合语句在函数中）。 但是从 ECMAScript Edition 6 开始将有所不同的， let 和 const 关键字允许你创建块作用域的变量。</p></blockquote><h3 id="声明变量类型"><a href="#声明变量类型" class="headerlink" title="声明变量类型"></a>声明变量类型</h3><ul><li>用new来声明。JavaScript 变量均为对象。当您声明一个变量时，就创建了一个新的对象。</li></ul><h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><ul><li>Array.length 并不总是等于数组中元素的个数<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="string">&quot;dog&quot;</span>, <span class="string">&quot;cat&quot;</span>, <span class="string">&quot;hen&quot;</span>];</span><br><span class="line">a[<span class="number">100</span>] = <span class="string">&quot;fox&quot;</span>;</span><br><span class="line">a.length; <span class="comment">// 101</span></span><br></pre></td></tr></table></figure></li></ul><h2 id="控制结构"><a href="#控制结构" class="headerlink" title="控制结构"></a>控制结构</h2><h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><ul><li><p>for</p></li><li><p>for…of循环，ES2015 引入了更加简洁的，可以用它来遍历可迭代对象，例如数组：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> currentValue <span class="keyword">of</span> a) &#123;</span><br><span class="line">  <span class="comment">// Do something with currentValue</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>for…in  注意，如果有人向 Array.prototype 添加了新的属性，使用这样的循环这些属性也同样会被遍历。所以并不推荐使用这种方法遍历数组：</p></li><li><p>forEach()</p></li><li><p>while</p></li><li><p>do…while</p><blockquote><p>do…while循环体会至少执行1次，而for和while循环则可能一次都不执行。</p></blockquote></li></ul><h3 id="执行环境和作用域"><a href="#执行环境和作用域" class="headerlink" title="执行环境和作用域"></a>执行环境和作用域</h3><ul><li><p>执行环境（execution context，为简单起见，有时也称为“环境”）是 JavaScript 中最为重要的一个概念。执行环境定义了变量或函数有权访问的其他数据，决定了它们各自的行为。每个执行环境都有一个与之关联的变量对象（variable object），环境中定义的所有变量和函数都保存在这个对象中。虽然我们编写的代码无法访问这个对象，但解析器在处理数据时会在后台使用它。</p></li><li><p>全局执行环境是最外围的一个执行环境。根据 ECMAScript 实现所在的宿主环境不同，表示执行环境的对象也不一样。在 Web 浏览器中，全局执行环境被认为是 window 对象（第 7 章将详细讨论），因此所有全局变量和函数都是作为 window 对象的属性和方法创建的。某个执行环境中的所有代码执行完毕后，该环境被销毁，保存在其中的所有变量和函数定义也随之销毁（全局执行环境直到应用程序退出——例如关闭网页或浏览器——时才会被销毁）。</p></li><li><p>每个函数都有自己的执行环境。当执行流进入一个函数时，函数的环境就会被推入一个环境栈中。而在函数执行之后，栈将其环境弹出，把控制权返回给之前的执行环境。ECMAScript 程序中的执行流正是由这个方便的机制控制着。</p></li><li><p>当代码在一个环境中执行时，会创建变量对象的一个作用域链（scope chain）。作用域链的用途，是保证对执行环境有权访问的所有变量和函数的有序访问。作用域链的前端，始终都是当前执行的代码所在环境的变量对象。如果这个环境是函数，则将其活动对象（activation object）作为变量对象。活动对象在最开始时只包含一个变量，即 arguments 对象（这个对象在全局环境中是不存在的）。作用域链中的下一个变量对象来自包含（外部）环境，而再下一个变量对象则来自下一个包含环境。这样，一直延续到全局执行环境；全局执行环境的变量对象始终都是作用域链中的最后一个对象。</p></li><li><p>标识符解析是沿着作用域链一级一级地搜索标识符的过程。搜索过程始终从作用域链的前端开始，然后逐级地向后回溯，直至找到标识符为止（如果找不到标识符，通常会导致错误发生）。</p></li><li><p>函数参数也被当作变量来对待，因此其访问规则与执行环境中的其他变量相同。</p></li></ul><hr><p>P.S.本文部分内容参考了 <a href="https://www.liaoxuefeng.com/">廖雪峰博客</a> 、 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript">MDN Web docs</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;js-变量（大小写敏感）&quot;&gt;&lt;a href=&quot;#js-变量（大小写敏感）&quot; class=&quot;headerlink&quot; title=&quot;js 变量（大小写敏感）&quot;&gt;&lt;/a&gt;js 变量（大小写敏感）&lt;/h2&gt;&lt;h3 id=&quot;分类&quot;&gt;&lt;a href=&quot;#分类&quot; class=&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="js" scheme="http://ah-well.github.io/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>language leraning</title>
+    <link href="http://ah-well.github.io/2019/03/22/language/"/>
+    <id>http://ah-well.github.io/2019/03/22/language/</id>
+    <published>2019-03-22T02:55:14.000Z</published>
+    <updated>2021-07-05T03:14:59.281Z</updated>
+    
+    <content type="html"><![CDATA[<p>  偶尔还是得学习下一两门外语的语言规则，发音什么的一边去</p><ul><li>from zero to hero</li><li>underdog  弱旅（实力比较弱的队伍，俗称下狗）</li><li>功不唐捐 佛家语，指功夫不会白白地抛弃。”唐”意为“白白的，徒然的”。</li><li>You will end up reinventing Wordpress, in a horrible way. 你将以一种糟糕的方式重新使用wp</li><li>tit for tat 以牙还牙</li></ul><h3 id="短语"><a href="#短语" class="headerlink" title="短语"></a>短语</h3><ul><li>end up      &lt;非正&gt;（以…）结束; 最终成为[变得]; 最后处于;</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;  偶尔还是得学习下一两门外语的语言规则，发音什么的一边去&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;from zero to hero&lt;/li&gt;
+&lt;li&gt;underdog  弱旅（实力比较弱的队伍，俗称下狗）&lt;/li&gt;
+&lt;li&gt;功不唐捐 佛家语，指功夫不会白白地抛弃。”唐”意为“白白的，
+      
+    
+    </summary>
+    
+    
+      <category term="learn" scheme="http://ah-well.github.io/tags/learn/"/>
+    
+      <category term="English" scheme="http://ah-well.github.io/tags/English/"/>
+    
+      <category term="Japanese" scheme="http://ah-well.github.io/tags/Japanese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Gallery</title>
+    <link href="http://ah-well.github.io/2019/01/15/Gallery/"/>
+    <id>http://ah-well.github.io/2019/01/15/Gallery/</id>
+    <published>2019-01-15T09:45:50.000Z</published>
+    <updated>2021-07-05T03:14:59.272Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="相册" scheme="http://ah-well.github.io/tags/%E7%9B%B8%E5%86%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记一次工作之余的体会</title>
+    <link href="http://ah-well.github.io/2018/08/10/winetable/"/>
+    <id>http://ah-well.github.io/2018/08/10/winetable/</id>
+    <published>2018-08-09T16:48:53.000Z</published>
+    <updated>2021-07-05T03:14:59.313Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">文章需要访问密码！</h3><script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <div id="security"> <div class="input-container"> <input type="password" class="form-control" id="pass" placeholder="回车确认"> <label for="pass">请输入访问密码</label> </div> </div> <div id="encrypt-blog" style="display:none"> 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 </div>]]></content>
+    
+    <summary type="html">
+    
+      PS：文章需要密码才能查看全文！&lt;/br&gt;
+    
+    </summary>
+    
+      <category term="code" scheme="http://ah-well.github.io/categories/code/"/>
+    
+      <category term="blog" scheme="http://ah-well.github.io/categories/code/blog/"/>
+    
+    
+      <category term="酒桌场合" scheme="http://ah-well.github.io/tags/%E9%85%92%E6%A1%8C%E5%9C%BA%E5%90%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端与协议</title>
+    <link href="http://ah-well.github.io/2018/08/03/protocol/"/>
+    <id>http://ah-well.github.io/2018/08/03/protocol/</id>
+    <published>2018-08-02T16:53:53.000Z</published>
+    <updated>2021-07-05T03:14:59.286Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="协议的定义"><a href="#协议的定义" class="headerlink" title="协议的定义"></a>协议的定义</h1><ul><li>前端与服务端之间的交互数据通信，可以认为是全后端开发者之间主观协商形成的一层数据接口规范。</li></ul><hr><h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><ul><li>http协议</li><li>基于SSL(Secure Sockets Layer,安全套接字层)的https协议</li><li>移动端Web脚本与移动端Native原生程序交互的协议</li><li>HTML5的WebSocket实时通信协议</li><li>与服务端交互的RESTful协议</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;协议的定义&quot;&gt;&lt;a href=&quot;#协议的定义&quot; class=&quot;headerlink&quot; title=&quot;协议的定义&quot;&gt;&lt;/a&gt;协议的定义&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;前端与服务端之间的交互数据通信，可以认为是全后端开发者之间主观协商形成的一层数据接口规范。&lt;/li&gt;
+&lt;
+      
+    
+    </summary>
+    
+      <category term="code" scheme="http://ah-well.github.io/categories/code/"/>
+    
+      <category term="blog" scheme="http://ah-well.github.io/categories/code/blog/"/>
+    
+    
+      <category term="前端" scheme="http://ah-well.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="协议" scheme="http://ah-well.github.io/tags/%E5%8D%8F%E8%AE%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>压抑的一天</title>
+    <link href="http://ah-well.github.io/2018/07/15/sad/"/>
+    <id>http://ah-well.github.io/2018/07/15/sad/</id>
+    <published>2018-07-15T15:36:53.000Z</published>
+    <updated>2021-07-05T03:14:59.301Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>搬完新家的第一天，跟家里人在微信通了几次电话和视频。恰巧最近几天碰上台风天气，昨晚没带伞淋了一身的雨水，抬抬头仰望路灯下微微倾斜的雨滴，显得有些凄冷。</li><li>心里一直惦记着几件事，一个是 6k，一个是未知的前途，兜兜转转，总觉得自己能力不足，干不了什么事情，对待身边的亲人有时候又太苛刻。对自己的父亲表示出疑心，导致他内心对我的一番悲叹。这么多年了，我是一点一点长大了，他又是在一点一点老去……</li><li>这个时间段，三弟没打工去龙港学电商，家里那边电器行情不景气，老妈吃着苦跑去夹铁，二弟又是做三歇四，老豆他又只能靠记码收别人的脸色账。我实在是不知道自己现在还能到坚持什么时候，自己给自己积极的暗示真的很重要，有时候又很希望别人能够拉我一把，不过现实终究是不可能的。始终还是得靠自己突破这层障碍。</li><li>细细想想我真的时间不多了，</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;搬完新家的第一天，跟家里人在微信通了几次电话和视频。恰巧最近几天碰上台风天气，昨晚没带伞淋了一身的雨水，抬抬头仰望路灯下微微倾斜的雨滴，显得有些凄冷。&lt;/li&gt;
+&lt;li&gt;心里一直惦记着几件事，一个是 6k，一个是未知的前途，兜兜转转，总觉得自己能力不足，干不了什
+      
+    
+    </summary>
+    
+      <category term="生活" scheme="http://ah-well.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="bad" scheme="http://ah-well.github.io/tags/bad/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>时间表</title>
+    <link href="http://ah-well.github.io/2018/07/11/schedule/"/>
+    <id>http://ah-well.github.io/2018/07/11/schedule/</id>
+    <published>2018-07-11T03:40:30.000Z</published>
+    <updated>2021-07-05T03:14:59.310Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">文章需要访问密码！</h3><script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <div id="security"> <div class="input-container"> <input type="password" class="form-control" id="pass" placeholder="回车确认"> <label for="pass">请输入访问密码</label> </div> </div> <div id="encrypt-blog" style="display:none"> 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 </div>]]></content>
+    
+    <summary type="html">
+    
+      PS：文章需要密码才能查看全文！&lt;/br&gt;
+    
+    </summary>
+    
+      <category term="生活" scheme="http://ah-well.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="杂念" scheme="http://ah-well.github.io/tags/%E6%9D%82%E5%BF%B5/"/>
+    
+  </entry>
+  
+</feed>
